@@ -7,6 +7,5 @@ export default async (req: NowRequest, res: NowResponse) => {
   if (secret) {
     res.setHeader("X-Hook-Secret", secret);
   }
-  res.setHeader("Asana-Disable", "new_user_task_lists")
   res.json({ message: "Ok" });
 };
